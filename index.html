@@ -16,7 +16,7 @@
         <!-- input per aggiungere -->
         <div>
             <h3>Inserisci qui</h3>
-            <input v-model="nuovoTodo" type="text" class="me-3">
+            <input v-model="nuovoTodo" type="text" class="me-3" @keyup.enter="aggiungiTodo">
             <button @click="aggiungiTodo">Aggiungi</button>
         </div>
         <!-- lista aggiunte -->
