@@ -21,7 +21,7 @@
         </div>
         <!-- lista aggiunte -->
         <ul class="mt-3">
-            <li>
+            <li v-for="(item, index) in lista" :key="index">
                 <span class="pe-3">{{lista[activeIndex].text}}</span>
                 <button>Cancella</button>
             </li>

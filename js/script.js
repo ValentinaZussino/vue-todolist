@@ -7,7 +7,15 @@ createApp({
             lista:[
                 {
                     text: 'oggetto',
-                    done: true
+                    done: false
+                },
+                {
+                    text: 'oggetto',
+                    done: false
+                },
+                {
+                    text: 'oggetto',
+                    done: false
                 },
             ]
         }
