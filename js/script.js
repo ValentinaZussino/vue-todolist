@@ -3,6 +3,7 @@ const {createApp} = Vue;
 createApp({
     data(){
         return{
+            nuovoTodo:'',
             activeIndex: 0,
             lista:[
                 {
@@ -10,14 +11,20 @@ createApp({
                     done: false
                 },
                 {
-                    text: 'oggetto',
+                    text: 'ciao',
                     done: false
                 },
                 {
-                    text: 'oggetto',
+                    text: 'ok',
                     done: false
                 },
             ]
+        }
+    },
+    methods: {
+        aggiungiTodo(){
+            this.lista.unshift({text: this.nuovoTodo, done: false});
+            this.nuovoTodo = '';
         }
     }
 }).mount('#app')
