@@ -37,5 +37,9 @@ createApp({
         cancellaTodo(i){
             this.lista.splice(i, 1);
         },
+        toggleTodo(i){
+            this.lista[i].done = !this.lista[i].done;
+            console.log('prova')
+        },
     }
 }).mount('#app')
