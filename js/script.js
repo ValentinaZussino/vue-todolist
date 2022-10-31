@@ -12,10 +12,18 @@ createApp({
                 },
                 {
                     text: 'ciao',
-                    done: false
+                    done: true
                 },
                 {
                     text: 'ok',
+                    done: false
+                },
+                {
+                    text: 'buongiorno',
+                    done: true
+                },
+                {
+                    text: 'elemento',
                     done: false
                 },
             ]

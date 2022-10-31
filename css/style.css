@@ -6,3 +6,6 @@ body{
 .vz_cross {
     cursor: pointer;
 }
+.vz_done-true{
+    text-decoration: line-through;
+}
