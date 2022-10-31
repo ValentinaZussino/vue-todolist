@@ -25,6 +25,9 @@ createApp({
         aggiungiTodo(){
             this.lista.unshift({text: this.nuovoTodo, done: false});
             this.nuovoTodo = '';
-        }
+        },
+        cancellaTodo(i){
+            this.lista.splice(i, 1);
+        },
     }
 }).mount('#app')

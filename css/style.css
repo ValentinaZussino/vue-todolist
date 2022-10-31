@@ -3,3 +3,6 @@ body{
     color: white;
     padding: 30px;
 }
+.vz_cross {
+    cursor: pointer;
+}
