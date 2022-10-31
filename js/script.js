@@ -1,4 +1,4 @@
-console.log('hello')
+// console.log('hello')
 const {createApp} = Vue;
 createApp({
     data(){
@@ -39,7 +39,13 @@ createApp({
         },
         toggleTodo(i){
             this.lista[i].done = !this.lista[i].done;
-            console.log('prova')
         },
     }
 }).mount('#app')
+
+let ulMenu = document.querySelector('.vz_menu');
+let menuHamburger = document.querySelector('.vz_hamburger');
+menuHamburger.addEventListener('click', function(){
+    document.body.classList.toggle('vz_menu-open');
+});
+
