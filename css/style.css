@@ -51,6 +51,9 @@ body{
 @media screen and (max-width:768px) {
     .vz_hamburger{
         display: block;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
     }
     .vz_menu{
         position: absolute;
@@ -73,11 +76,6 @@ body{
         height: 100vh;
         padding: 2%;
     }
-    .vz_hamburger{
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
-    }
     .vz_hamburger span{
         height: 1px;
         width: 35px;
@@ -85,5 +83,12 @@ body{
         position: relative;
         display: block;
         margin-top: 15px;
+        transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+    .vz_menu-open .vz_hamburger span:nth-child(1){
+        transform: rotate(45deg) translateY(11px);
+    }
+    .vz_menu-open .vz_hamburger span:nth-child(2){
+        transform: rotate(-45deg) translateY(-11px);
     }
 }
