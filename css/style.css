@@ -51,7 +51,7 @@ body{
     margin: -110px auto;
 }
 .add-div, .list-div{
-    padding: 12px;
+    padding: 12px 17px;
     border-radius: 3px;
     background-color: var(--white);
     box-shadow: 5px 5px 12px rgb(140, 140, 140);
@@ -62,6 +62,12 @@ body{
     padding: 3px 12px;
     border: none;
     color: var(--white);
+}
+.vz_alert {
+    margin-top: 10px;
+    width: 25%;
+    font-size: 12px;
+    text-align: center;
 }
 .list-div {
     margin-top: 20px;
