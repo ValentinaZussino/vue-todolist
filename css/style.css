@@ -123,4 +123,11 @@ body{
     .vz_menu-open .vz_hamburger span:nth-child(2){
         transform: rotate(-45deg) translateY(-11px);
     }
+    .vz_btn{
+        margin-top: 15px;
+    }
+    .vz_alert{
+        width: 45%;
+        margin: 17px auto;
+    }
 }
