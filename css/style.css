@@ -71,6 +71,7 @@ body{
 }
 .vz_done-true{
     text-decoration: line-through;
+    color: var(--green);
 }
 /* RESPONSIVE */
 @media screen and (max-width:768px) {

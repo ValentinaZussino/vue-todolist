@@ -40,12 +40,14 @@ createApp({
         toggleTodo(i){
             this.lista[i].done = !this.lista[i].done;
         },
+        toggleHamburger(){
+            document.body.classList.toggle('vz_menu-open');
+        }
     }
 }).mount('#app')
 
-let ulMenu = document.querySelector('.vz_menu');
-let menuHamburger = document.querySelector('.vz_hamburger');
-menuHamburger.addEventListener('click', function(){
-    document.body.classList.toggle('vz_menu-open');
-});
+// let menuHamburger = document.querySelector('.vz_hamburger');
+// menuHamburger.addEventListener('click', function(){
+//     document.body.classList.toggle('vz_menu-open');
+// });
 

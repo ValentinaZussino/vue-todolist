@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@3.2.41/dist/vue.global.min.js"></script>
     <title>Todo List</title>
 </head>
-<body>
+<body id="app">
     <!-- header -->
     <header class="vz_header">
         <div class="vz_header-content">
@@ -23,7 +23,7 @@
                 <li><a href="./pages/altro.html">Altro</a></li>
                 <li><a href="./pages/altro.html">Altro</a></li>
             </ul>
-            <div class="vz_hamburger">
+            <div class="vz_hamburger" @click="toggleHamburger">
                 <span></span>
                 <span></span>
             </div>
@@ -31,7 +31,7 @@
     </header>
     <!-- list -->
     <div class="green-rectangle"></div>
-    <div id="app" class="app-container">
+    <div class="app-container">
         <h1 class="text-center fw-bold mb-4">Todolist</h1>
         <!-- input per aggiungere -->
         <div class="add-div">
