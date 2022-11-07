@@ -5,6 +5,7 @@ createApp({
         return{
             nuovoTodo:'',
             inputVuoto: false,
+            errorShown: false,
             activeIndex: 0,
             lista:[
                 {
@@ -35,15 +36,18 @@ createApp({
             const alertError = document.createElement('div');
             if(this.nuovoTodo.length > 0){
                this.lista.unshift({text: this.nuovoTodo, done: false}); 
-               this.inputVuoto = false;
-               const alertDaRimuovere = document.querySelector('.alert-danger');
-               if(alertDaRimuovere) alertDaRimuovere.remove();
+               this.inputVuoto = false;   
+               this.errorShown = false;
+            //    const alertDaRimuovere = document.querySelector('.alert-danger');
+            //    if(alertDaRimuovere) alertDaRimuovere.remove();
             }else{
                this.inputVuoto = true;
-               const aggiungiAlert = document.querySelector('.add-div');
-               alertError.className='alert alert-danger vz_alert';
-               alertError.innerHTML = 'Add a Todo';
-               aggiungiAlert.append(alertError);
+            //    const aggiungiAlert = document.querySelector('.add-div');
+            //    alertError.className='alert alert-danger vz_alert';
+            //    alertError.innerHTML = 'Add a Todo';
+            //    aggiungiAlert.append(alertError);
+               this.errorShown = true;
+               console.log('ok')
             }
             this.nuovoTodo = '';
         },

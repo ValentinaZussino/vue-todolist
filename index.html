@@ -38,6 +38,7 @@
             <span class="fw-bold d-block">New Todo:</span>
             <input v-model="nuovoTodo" type="text" class="me-3" @keyup.enter="aggiungiTodo">
             <button class="vz_btn" @click="aggiungiTodo">Add</button>
+            <div class="alert alert-danger vz_alert" v-show="errorShown">Add a Todo</div>
         </div>
         <!-- lista aggiunte -->
         <div class="list-div">
